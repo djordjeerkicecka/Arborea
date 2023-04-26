@@ -1,0 +1,101 @@
+@import '../settings';
+
+.header {
+  height: 6rem;
+  padding-inline: 2rem;
+  background: black;
+
+  @include lg {
+    padding-inline: 4rem;
+    height: 10rem;
+  }
+
+  @include xl {
+    padding-inline: none;
+  }
+}
+
+.header__wrapper {
+  height: inherit;
+  max-width: 160rem;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__logo {
+  @include courgette;
+  font-size: 2.6rem;
+  margin-right: auto;
+
+  a {
+    color: $light;
+  }
+
+  @include lg {
+    font-size: 3.2rem;
+  }
+}
+
+.header__toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: transparent;
+  background: transparent;
+
+  &[aria-expanded='true'] {
+    .toggler--open {
+      display: none;
+    }
+
+    .toggler--closed {
+      display: block;
+    }
+  }
+
+  &[aria-expanded='false'] {
+    .toggler--open {
+      display: block;
+    }
+
+    .toggler--closed {
+      display: none;
+    }
+  }
+
+  @include lg {
+    display: none;
+  }
+}
+
+.toggler {
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: invert(1);
+}
+
+.header__nav {
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}
+
+.navbar {
+  @include lg {
+    display: flex;
+    gap: 2.5rem;
+  }
+}
+
+.navbar__link {
+  @include raleway-regular;
+
+  @include lg {
+    font-size: 2.6rem;
+    color: $light;
+  }
+}
