@@ -4,6 +4,7 @@
   position: relative;
   box-shadow: 0 1.6rem 1.6rem 0 rgba(0, 0, 0, 0.25);
   width: 100%;
+  z-index: 80;
 }
 
 .landing__frame {
@@ -82,4 +83,17 @@
   text-transform: capitalize;
   border: 0.1rem solid $light;
   backdrop-filter: blur(0.5rem);
+  transition: background 400ms ease-in, color 400ms ease-in;
+
+  &:hover {
+    background: $light;
+    color: $dark;
+  }
+
+  @include lg {
+    width: 18rem;
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 2.4rem;
+  }
 }
