@@ -1,0 +1,29 @@
+@mixin courgette {
+    font-family: 'Courgette', serif;
+    font-weight: 400;
+}
+
+@mixin raleway-light {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+@mixin raleway-regular {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+@mixin raleway-medium {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+@mixin raleway-semibold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+@mixin raleway-bold {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
