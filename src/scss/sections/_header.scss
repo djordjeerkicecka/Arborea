@@ -3,7 +3,9 @@
 .header {
   height: 6rem;
   padding-inline: 2rem;
-  background: black;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
 
   @include lg {
     padding-inline: 4rem;
@@ -17,6 +19,7 @@
 
 .header__wrapper {
   height: inherit;
+  width: 100%;
   max-width: 160rem;
   margin-inline: auto;
   display: flex;
@@ -97,5 +100,22 @@
   @include lg {
     font-size: 2.6rem;
     color: $light;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 0.2rem;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      background: $light;
+      transform: translateX(-50%);
+      transition: 400ms ease-in;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 }
