@@ -12,6 +12,10 @@
   }
 }
 
+.section--light {
+  background: $light;
+}
+
 .section__title {
   @include raleway-semibold;
   font-size: 2.8rem;
@@ -97,5 +101,108 @@
   @include lg {
     font-size: 1.8rem;
     line-height: 2.4rem;
+  }
+}
+
+.section__cards {
+  display: grid;
+  row-gap: 3rem;
+  width: fit-content;
+  margin-inline: auto;
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4.5rem;
+  }
+
+  @include lg {
+    gap: 5rem 15rem;
+  }
+}
+
+.section__card {
+  display: flex;
+  gap: 1rem;
+
+  @include lg {
+    gap: 2rem;
+  }
+}
+
+.section__card--head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border: 0.1rem solid $green;
+  border-radius: 50%;
+
+  @include md {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  @include lg {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+.section__card--body {
+  max-width: 28rem;
+
+  @include lg {
+    max-width: 42.5rem;
+  }
+}
+
+.section__card--icon {
+  fill: $green;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  @include md {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  @include lg {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}
+
+.section__card--title {
+  @include raleway-regular;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+
+  @include md {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+  }
+
+  @include lg {
+    line-height: 3.2rem;
+  }
+}
+
+.section__card--text {
+  @include raleway-light;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: .04em;
+
+  @include md {
+    font-size: 1.6rem;
+  }
+
+  @include lg {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
   }
 }
