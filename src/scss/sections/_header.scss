@@ -12,7 +12,7 @@
     height: 10rem;
   }
 
-  @include xl {
+  @include breakpoint(1680px) {
     padding-inline: 0;
   }
 }
