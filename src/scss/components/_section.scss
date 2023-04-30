@@ -12,6 +12,10 @@
   }
 }
 
+.section--tiles {
+  padding: 0;
+}
+
 .section--light {
   background: $light;
 }
@@ -199,7 +203,7 @@
   @include raleway-light;
   font-size: 1.4rem;
   line-height: 2rem;
-  letter-spacing: .04em;
+  letter-spacing: 0.04em;
 
   @include md {
     font-size: 1.6rem;
@@ -208,5 +212,173 @@
   @include lg {
     font-size: 1.8rem;
     line-height: 2.8rem;
+  }
+}
+
+.section__tiles {
+  @include md {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+.section__tile {
+  @include md {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.section__tile--reversed {
+  @include md {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+}
+
+.section__tile-frame {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include md {
+    width: 50%;
+    max-width: 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background: orange;
+  }
+}
+
+.section__tile-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section__tile-body {
+  text-align: center;
+  padding-inline: 2.5rem;
+  padding-block: 2.5rem 3rem;
+
+  @include smd {
+    padding-inline: 5rem;
+    padding-block: 3.5rem 4rem;
+  }
+
+  @include md {
+    padding-inline: 3rem 5rem;
+    padding-block: 0;
+    text-align: left;
+    width: 50%;
+  }
+
+  @include lg {
+    display: flex;
+    padding-inline: 8rem;
+  }
+}
+
+.section__tile-body--right {
+  @include lg {
+    justify-content: flex-end;
+  }
+}
+
+.section__tile-content {
+  @include lg {
+    max-width: 55rem;
+  }
+}
+
+.section__tile-title {
+  @include raleway-semibold;
+  font-size: 2.4rem;
+  letter-spacing: 0.02em;
+  color: $dark;
+  margin-bottom: 1rem;
+
+  @include smd {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  @include md {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  @include lg {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.section__tile-text {
+  @include raleway-light;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 2rem;
+
+  @include smd {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 3rem;
+  }
+
+  @include md {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @include lg {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.section__tile-btn {
+  display: inline-block;
+  width: 12rem;
+  height: 3rem;
+  line-height: 3rem;
+  @include raleway-regular;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: $dark;
+  text-align: center;
+  border: 0.1rem solid $dark;
+  transition: 400ms ease-in;
+
+  &:hover {
+    color: $light;
+    background: $dark;
+  }
+
+  @include smd {
+    font-size: 2rem;
+    width: 16rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  @include md {
+    width: 12rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+  }
+
+  @include lg {
+    width: 16rem;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.8rem;
   }
 }
