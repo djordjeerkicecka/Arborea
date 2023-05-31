@@ -10,6 +10,12 @@
 
 body {
   font-size: 1.6rem;
+
+  &[data-scroll="no-scroll"] {
+    max-height: 100dvh;
+    max-height: 100vh;
+    overflow: hidden;
+  }
 }
 
 img {
