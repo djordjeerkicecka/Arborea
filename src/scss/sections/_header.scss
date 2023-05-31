@@ -4,9 +4,7 @@
 	--header-height: 6rem;
 	width: 100%;
 	height: var(--header-height);
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
+
 	position: fixed;
 	top: 0;
 	background: transparent;
@@ -19,6 +17,15 @@
   &.is-scrolling {
     background: $dark;
   }
+}
+
+.header__wrapper {
+  display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+  height: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
 }
 
 .nav-observer-trigger {
