@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Arborea</title>
+
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body class="js-body" data-scroll="scroll">
+		<header class="header js-header" aria-expanded="false">
+			<div class="header__wrapper">
+				<h1 class="header__logo"><a href="#">Arborea</a></h1>
+
+				<button class="header__toggler js-nav-toggler" aria-expanded="false" aria-controls="navbar">
+					<svg class="toggler toggler--open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+						<path
+							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+					</svg>
+					<svg class="toggler toggler--closed" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+						<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+						<path
+							d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+					</svg>
+				</button>
+
+				<nav class="header__nav js-nav" id="navbar" data-state="closed">
+					<ul class="navbar">
+						<li><a class="navbar__link" href="#">Home</a></li>
+						<li><a class="navbar__link" href="#">About</a></li>
+						<li><a class="navbar__link" href="#">Contact</a></li>
+						<li><a class="navbar__link" href="#">Tiles</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section class="landing">
+				<picture class="landing__frame">
+					<source media="(max-width: 480px)" srcset="./assets/images/banner/banner-mobile.jpg" />
+					<source media="(max-width: 900px)" srcset="./assets/images/banner/banner-tablet.jpg" />
+					<source media="(min-width: 900px)" srcset="./assets/images/banner/banner-desktop.jpg" />
+					<img
+						class="landing__img"
+						src="./assets/images/banner/banner-mobile.jpg"
+						alt="Forest road with rays of sunshine" />
+				</picture>
+
+				<div class="landing__content">
+					<h2 class="landing__title">Sed laoreet ipsum elit</h2>
+					<p class="landing__text">Morbi ante nisi, dictum sit amet congue at, consectetur condimentum quam.</p>
+					<a class="landing__button" href="#">learn more</a>
+				</div>
+			</section>
+
+			<div class="nav-observer-trigger js-nav-observer-trigger"></div>
+
+			<section class="section js-about">
+				<h2 class="section__title">Mauris eleifend</h2>
+				<div class="section__articles">
+					<article class="section__article">
+						<h3 class="section__article-title">In egestas interdum</h3>
+						<p class="section__article-text">
+							Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit laoreet
+							ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis, sodales viverra
+							justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+						</p>
+					</article>
+
+					<article class="section__article">
+						<h3 class="section__article-title">In egestas interdum</h3>
+						<p class="section__article-text">
+							Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit laoreet
+							ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis, sodales viverra
+							justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+						</p>
+					</article>
+
+					<article class="section__article">
+						<h3 class="section__article-title">In egestas interdum</h3>
+						<p class="section__article-text">
+							Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit laoreet
+							ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis, sodales viverra
+							justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="jumbotron">
+				<h2 class="jumbotron__title">Sed nec urna at tortor</h2>
+				<p class="jumbotron__text">
+					Ut aliquet feugiat risus aliquet mattis. In egestas interdum molestie. In vel convallis velit. Nunc pretium mi
+					ac erat venenatis pharetra
+				</p>
+			</section>
+
+			<section class="section">
+				<h2 class="section__title">Donec posuere</h2>
+
+				<div class="section__cards">
+					<article class="section__card">
+						<div class="section__card--head">
+							<svg class="section__card--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+								<path
+									d="M278.5 215.6L23 471c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l57-57h68c49.7 0 97.9-14.4 139-41c11.1-7.2 5.5-23-7.8-23c-5.1 0-9.2-4.1-9.2-9.2c0-4.1 2.7-7.6 6.5-8.8l81-24.3c2.5-.8 4.8-2.1 6.7-4l22.4-22.4c10.1-10.1 2.9-27.3-11.3-27.3l-32.2 0c-5.1 0-9.2-4.1-9.2-9.2c0-4.1 2.7-7.6 6.5-8.8l112-33.6c4-1.2 7.4-3.9 9.3-7.7C506.4 207.6 512 184.1 512 160c0-41-16.3-80.3-45.3-109.3l-5.5-5.5C432.3 16.3 393 0 352 0s-80.3 16.3-109.3 45.3L139 149C91 197 64 262.1 64 330v55.3L253.6 195.8c6.2-6.2 16.4-6.2 22.6 0c5.4 5.4 6.1 13.6 2.2 19.8z" />
+							</svg>
+						</div>
+						<div class="section__card--body">
+							<h3 class="section__card--title">In egestas interdum</h3>
+							<p class="section__card--text">
+								Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit laoreet
+								ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis, sodales viverra
+								justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+							</p>
+						</div>
+					</article>
+
+					<article class="section__card">
+						<div class="section__card--head">
+							<svg class="section__card--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+								<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+								<path
+									d="M368 32c41.7 0 75.9 31.8 79.7 72.5l85.6 26.3c25.4 7.8 42.8 31.3 42.8 57.9c0 21.8-11.7 41.9-30.7 52.7L400.8 323.5 493.3 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H480c-8.5 0-16.6-3.4-22.6-9.4L346.9 360.2c11.7-36 3.2-77.1-25.4-105.7c-40.6-40.6-106.3-40.6-146.9-.1L101 324.4c-6.4 6.1-6.7 16.2-.6 22.6s16.2 6.6 22.6 .6l73.8-70.2 .1-.1 .1-.1c3.5-3.5 7.3-6.6 11.3-9.2c27.9-18.5 65.9-15.4 90.5 9.2c24.7 24.7 27.7 62.9 9 90.9c-2.6 3.8-5.6 7.5-9 10.9L261.8 416H352c17.7 0 32 14.3 32 32s-14.3 32-32 32H64c-35.3 0-64-28.7-64-64C0 249.6 127 112.9 289.3 97.5C296.2 60.2 328.8 32 368 32zm0 104a24 24 0 1 0 0-48 24 24 0 1 0 0 48z" />
+							</svg>
+						</div>
+						<div class="section__card--body">
+							<h3 class="section__card--title">In egestas interdum</h3>
+							<p class="section__card--text">
+								Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit laoreet
+								ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis, sodales viverra
+								justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+							</p>
+						</div>
+					</article>
+
+					<article class="section__card">
+						<div class="section__card--head">
+							<svg class="section__card--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+								<path
+									d="M210.6 5.9L62 169.4c-3.9 4.2-6 9.8-6 15.5C56 197.7 66.3 208 79.1 208H104L30.6 281.4c-4.2 4.2-6.6 10-6.6 16C24 309.9 34.1 320 46.6 320H80L5.4 409.5C1.9 413.7 0 419 0 424.5c0 13 10.5 23.5 23.5 23.5H192v32c0 17.7 14.3 32 32 32s32-14.3 32-32V448H424.5c13 0 23.5-10.5 23.5-23.5c0-5.5-1.9-10.8-5.4-15L368 320h33.4c12.5 0 22.6-10.1 22.6-22.6c0-6-2.4-11.8-6.6-16L344 208h24.9c12.7 0 23.1-10.3 23.1-23.1c0-5.7-2.1-11.3-6-15.5L237.4 5.9C234 2.1 229.1 0 224 0s-10 2.1-13.4 5.9z" />
+							</svg>
+						</div>
+						<div class="section__card--body">
+							<h3 class="section__card--title">In egestas interdum</h3>
+							<p class="section__card--text">
+								Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit laoreet
+								ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis, sodales viverra
+								justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+							</p>
+						</div>
+					</article>
+
+					<article class="section__card">
+						<div class="section__card--head">
+							<svg class="section__card--icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+								<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+								<path
+									d="M560 160A80 80 0 1 0 560 0a80 80 0 1 0 0 160zM55.9 512H381.1h75H578.9c33.8 0 61.1-27.4 61.1-61.1c0-11.2-3.1-22.2-8.9-31.8l-132-216.3C495 196.1 487.8 192 480 192s-15 4.1-19.1 10.7l-48.2 79L286.8 81c-6.6-10.6-18.3-17-30.8-17s-24.1 6.4-30.8 17L8.6 426.4C3 435.3 0 445.6 0 456.1C0 487 25 512 55.9 512z" />
+							</svg>
+						</div>
+						<div class="section__card--body">
+							<h3 class="section__card--title">In egestas interdum</h3>
+							<p class="section__card--text">
+								Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit laoreet
+								ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis, sodales viverra
+								justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+							</p>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="section section--light section--tiles">
+				<div class="section__tiles">
+					<div class="section__tile">
+						<picture class="section__tile-frame">
+							<source media="(max-width: 480px)" srcset="./assets/images/topic-one/topic-mobile-one.jpg" />
+							<source media="(max-width: 1000px)" srcset="./assets/images/topic-one/topic-tablet-one.jpg" />
+							<source media="(min-width: 1000px)" srcset="./assets/images/topic-one/topic-desktop-one.jpg" />
+							<img
+								class="section__tile-img"
+								src="./assets/images/topic-one/topic-mobile-one.jpg"
+								alt="Purple and pink flowers" />
+						</picture>
+						<div class="section__tile-body">
+							<div class="section__tile-content">
+								<h2 class="section__tile-title">Donec posuere</h2>
+								<p class="section__tile-text">
+									Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit
+									laoreet ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis,
+									sodales viverra justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+								</p>
+								<a class="section__tile-btn" href="#">learn more</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="section__tile section__tile--reversed">
+						<picture class="section__tile-frame">
+							<source media="(max-width: 480px)" srcset="./assets/images/topic-two/topic-mobile-two.jpg" />
+							<source media="(max-width: 1000px)" srcset="./assets/images/topic-two/topic-tablet-two.jpg" />
+							<source media="(min-width: 1000px)" srcset="./assets/images/topic-two/topic-desktop-two.jpg" />
+							<img
+								class="section__tile-img"
+								src="./assets/images/topic-two/topic-mobile-two.jpg"
+								alt="Light blue ball of flowers" />
+						</picture>
+						<div class="section__tile-body section__tile-body--right">
+							<div class="section__tile-content">
+								<h2 class="section__tile-title">Donec posuere</h2>
+								<p class="section__tile-text">
+									Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit
+									laoreet ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis,
+									sodales viverra justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+								</p>
+								<a class="section__tile-btn" href="#">learn more</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="section__tile">
+						<picture class="section__tile-frame">
+							<source media="(max-width: 480px)" srcset="./assets/images/topic-three/topic-mobile-three.jpg" />
+							<source media="(max-width: 1000px)" srcset="./assets/images/topic-three/topic-tablet-three.jpg" />
+							<source media="(min-width: 1000px)" srcset="./assets/images/topic-three/topic-desktop-three.jpg" />
+							<img
+								class="section__tile-img"
+								src="./assets/images/topic-three/topic-mobile-three.jpg"
+								alt="Bright pink flower with a white edge" />
+						</picture>
+						<div class="section__tile-body">
+							<div class="section__tile-content">
+								<h2 class="section__tile-title">Donec posuere</h2>
+								<p class="section__tile-text">
+									Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit
+									laoreet ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis,
+									sodales viverra justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+								</p>
+								<a class="section__tile-btn" href="#">learn more</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="section__tile section__tile--reversed">
+						<picture class="section__tile-frame">
+							<source media="(max-width: 480px)" srcset="./assets/images/topic-four/topic-mobile-four.jpg" />
+							<source media="(max-width: 1000px)" srcset="./assets/images/topic-four/topic-tablet-four.jpg" />
+							<source media="(min-width: 1000px)" srcset="./assets/images/topic-four/topic-desktop-four.jpg" />
+							<img
+								class="section__tile-img"
+								src="./assets/images/topic-four/topic-mobile-four.jpg"
+								alt="Street with fallen purple petals" />
+						</picture>
+						<div class="section__tile-body section__tile-body--right">
+							<div class="section__tile-content">
+								<h2 class="section__tile-title">Donec posuere</h2>
+								<p class="section__tile-text">
+									Ut commodo scelerisque eros facilisis accumsan. In purus erat, facilisis vel enim non, suscipit
+									laoreet ex. Pellentesque eget tincidunt velit. Vivamus libero tellus, luctus congue dolor quis,
+									sodales viverra justo. Mauris varius eros non lorem molestie, non fringilla nisi faucibus.
+								</p>
+								<a class="section__tile-btn" href="#">learn more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__top">
+					<a class="footer__logo" href="#">Arborea</a>
+
+					<ul class="footer__socials">
+						<li class="footer__socials-item">
+							<a class="footer__socials-link" href="#">
+								<svg class="footer__socials-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+									<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+									<path
+										d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+								</svg>
+							</a>
+						</li>
+
+						<li class="footer__socials-item">
+							<a class="footer__socials-link" href="#">
+								<svg class="footer__socials-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+									<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+									<path
+										d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+								</svg>
+							</a>
+						</li>
+
+						<li class="footer__socials-item">
+							<a class="footer__socials-link" href="#">
+								<svg class="footer__socials-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+									<path
+										d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+								</svg>
+							</a>
+						</li>
+
+						<li class="footer__socials-item">
+							<a class="footer__socials-link" href="#">
+								<svg class="footer__socials-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+									<path
+										d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<ul class="footer__bottom">
+					<li class="footer__bottom-item"><a href="#" class="footer__bottom-link">mauris</a></li>
+					<li class="footer__bottom-item"><a href="#" class="footer__bottom-link">molestie</a></li>
+					<li class="footer__bottom-item"><a href="#" class="footer__bottom-link">semper</a></li>
+					<li class="footer__bottom-item"><a href="#" class="footer__bottom-link">qusique</a></li>
+				</ul>
+
+				<small class="footer__copyright"> Copyright © Djordje Erkic 2023</small>
+			</div>
+		</footer>
+		<script src="./js/scripts.js" type="module"></script>
+	</body>
+</html>
